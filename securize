@@ -1,0 +1,3 @@
+#!/bin/bash
+name=$1
+scp /usr/local/share/securize_inst/securize.sh $name:/tmp/ &> /dev/null && ssh $name /tmp/securize.sh
